@@ -19,8 +19,12 @@ $(document).ready(function(){
 						$.each(result.lista_socios, function( key, value ){
 							listas += '<tr><td>'+ value.nombre +'</td><td>'+ value.tipo_socio +'</td></tr>';
 						});
-						$("#contenido").html( '<h4>Lista de Socios</h4><table border="1"><tr><td>Nombre</td><td>Tipo de socio</td></tr>'+ listas +'</table>' );
-						window.alert('Se ha cargado la lista exitosamente');
+
+						listas = '<h3>Bienvenido '+ value.user.name +'. Se ha cargado la lista exitosamente</h3><br/>'+ 
+							'<h4>Lista de Socios</h4>'+
+							'<table border="1"><tr><td>Nombre</td><td>Tipo de socio</td></tr>'+ listas +'</table>';
+						$("#contenido").html( listas );
+						
 					}else{
 						window.alert(result.status.message);
 					}
