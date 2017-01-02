@@ -22,7 +22,7 @@ $(document).ready(function(){
 
 						listas = '<h3>Bienvenido '+ result.user.name +'. Se ha cargado la lista exitosamente</h3><br/>'+ 
 							'<h4>Lista de Socios</h4>'+
-							'<table border="1"><tr><td>Nombre</td><td>Tipo de socio</td></tr>'+ listas +'</table>';
+							'<table border="1"><tr><td>Nombre</td><td>Tipo de socio</td></tr>'+ listas +'</table>'; 
 						$("#contenido").html( listas );
 						
 					}else{
