@@ -20,7 +20,7 @@ $(document).ready(function(){
 							listas += '<tr><td>'+ value.nombre +'</td><td>'+ value.tipo_socio +'</td></tr>';
 						});
 
-						listas = '<h3>Bienvenido '+ value.user.name +'. Se ha cargado la lista exitosamente</h3><br/>'+ 
+						listas = '<h3>Bienvenido '+ result.user.name +'. Se ha cargado la lista exitosamente</h3><br/>'+ 
 							'<h4>Lista de Socios</h4>'+
 							'<table border="1"><tr><td>Nombre</td><td>Tipo de socio</td></tr>'+ listas +'</table>';
 						$("#contenido").html( listas );
@@ -40,4 +40,3 @@ $(document).ready(function(){
 
 	}); 
 }); 
-
